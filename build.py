@@ -1,0 +1,134 @@
+"""KnightHOODFX static site builder. Run: python build.py  (output goes to dist/)"""
+import re, shutil, math
+from pathlib import Path
+from datetime import date
+import markdown
+
+# ---------------- SETTINGS: edit these ----------------
+SITE_NAME = "KnightHOODFX"
+SITE_URL = "https://knighthoodfx.online"
+TAGLINE = "Trade. Learn. Grow."
+DESC = "A digital space that talks everything forex."
+EMAIL = "hello@knighthoodfx.online"      # change to a real inbox you own
+ADSENSE_CLIENT = ""                      # after approval: "ca-pub-1234567890123456"
+AD_SLOTS = {"top": "", "inarticle": "", "bottom": ""}   # ad unit IDs from AdSense
+# ------------------------------------------------------
+
+NAV = [("/", "Home"), ("/blog/", "Blog"), ("/about/", "About"), ("/disclaimer/", "Risk disclaimer"), ("/contact/", "Contact")]
+RISK = "Forex and CFD trading carries a high risk of loss. Everything here is education, not financial advice."
+
+def ad(name):
+    slot = AD_SLOTS.get(name)
+    if not (ADSENSE_CLIENT and slot):
+        return ""
+    return (f'<div class="ad"><span>Advertisement</span><ins class="adsbygoogle" style="display:block" '
+            f'data-ad-client="{ADSENSE_CLIENT}" data-ad-slot="{slot}" data-ad-format="auto" '
+            f'data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
+
+def page(title, desc, body, path, kind="website"):
+    full = SITE_NAME if title == SITE_NAME else f"{title} | {SITE_NAME}"
+    ads = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>'
+           if ADSENSE_CLIENT else "")
+    nav = "".join(f'<a href="{h}">{t}</a>' for h, t in NAV)
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{full}</title><meta name="description" content="{desc}">
+<link rel="canonical" href="{SITE_URL}{path}">
+<link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:title" content="{full}"><meta property="og:description" content="{desc}"><meta property="og:type" content="{kind}">
+<meta property="og:url" content="{SITE_URL}{path}"><meta property="og:image" content="{SITE_URL}/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0a1740">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">{ads}</head><body>
+<header><div class="wrap"><a class="brand" href="/"><img src="/assets/favicon-512.png" alt="">Knight<span>HOOD</span><b>FX</b></a><nav>{nav}</nav></div></header>
+<main>{body}</main>
+<footer><div class="wrap"><div><strong>{SITE_NAME}</strong><p>{DESC}</p><p>{RISK}</p></div>
+<div><a href="/privacy/">Privacy policy</a><br><a href="/disclaimer/">Risk disclaimer</a><br><a href="/contact/">Contact</a></div></div>
+<div class="wrap"><p>&copy; {date.today().year} {SITE_NAME}. All rights reserved.</p></div></footer></body></html>'''
+
+def load_posts():
+    posts = []
+    for f in Path("posts").glob("*.md"):
+        m = re.match(r"---\n(.*?)\n---\n(.*)", f.read_text(encoding="utf-8"), re.S)
+        meta = {k.strip(): v.strip() for k, v in (l.split(":", 1) for l in m.group(1).splitlines() if ":" in l)}
+        if meta.get("draft", "").lower() == "true":
+            continue
+        slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", f.stem)
+        body = markdown.markdown(m.group(2), extensions=["tables", "fenced_code"])
+        words = len(re.sub("<[^>]+>", " ", body).split())
+        posts.append(dict(slug=slug, body=body, mins=max(1, math.ceil(words / 200)), **meta))
+    return sorted(posts, key=lambda p: p["date"], reverse=True)
+
+def inject_ad(body):
+    i = 0
+    for _ in range(3):
+        j = body.find("</p>", i)
+        if j < 0:
+            return body
+        i = j + 4
+    return body[:i] + ad("inarticle") + body[i:]
+
+def row(p):
+    return (f'<a class="row" href="/blog/{p["slug"]}/"><time datetime="{p["date"]}">{p["date"]}</time>'
+            f'<div><h3>{p["title"]}</h3><p>{p["description"]}</p></div></a>')
+
+STATIC = {
+ "about": ("About", f"About {SITE_NAME}: free forex education for beginners and developing traders.", f"""<h1>About {SITE_NAME}</h1>
+<p>{SITE_NAME} is a digital space that talks everything forex. We publish plain-language guides on how the currency market works, how to read charts, and how to manage risk, so you can learn before you put money on the line.</p>
+<h3>What you will find here</h3><p>Beginner explainers, chart-reading lessons, risk management, trading psychology and market analysis.</p>
+<h3>What we do not do</h3><p>We do not promise profits, sell signals as guaranteed wins, or give personal financial advice. Trading is risky, and most of learning to trade is learning to manage losses.</p>
+<p><a href="/blog/">Start with the latest posts</a> or <a href="/contact/">get in touch</a>.</p>"""),
+ "contact": ("Contact", f"Contact {SITE_NAME}.", f"""<h1>Contact</h1><p>Questions, corrections or topic requests are welcome. Email us at <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+<p>We cannot give personal trading advice or recommend specific trades.</p>"""),
+ "disclaimer": ("Risk disclaimer", "Trading risk disclaimer for KnightHOODFX.", f"""<h1>Risk disclaimer</h1>
+<p>Trading foreign exchange and contracts for difference (CFDs) on margin carries a high level of risk and may not be suitable for all investors. You can lose more than your initial deposit. Leverage magnifies both gains and losses.</p>
+<p>All content on {SITE_NAME} is for general education and information only. It is not financial, investment or legal advice, and it is not a recommendation to buy or sell any instrument. Examples use illustrative numbers, and past performance does not indicate future results.</p>
+<p>Only trade with money you can afford to lose, and speak to a licensed adviser if you need advice for your situation. Make sure any broker you use is regulated in your jurisdiction.</p>"""),
+ "privacy": ("Privacy policy", f"How {SITE_NAME} handles data, cookies and advertising.", f"""<h1>Privacy policy</h1><p>Last updated: {date.today():%B %d, %Y}.</p>
+<h3>Information we collect</h3><p>We do not require an account to read this site. If you email us, we receive your email address and message and use them only to reply.</p>
+<h3>Cookies and advertising</h3><p>We use Google AdSense to show ads. Google and its partners use cookies, including the DoubleClick cookie, to serve ads based on your visits to this and other websites. You can opt out of personalised advertising at <a href="https://adssettings.google.com">Google Ads Settings</a> or at <a href="https://www.aboutads.info">aboutads.info</a>. Read more in <a href="https://policies.google.com/technologies/ads">Google's advertising policy</a>.</p>
+<h3>Analytics and server logs</h3><p>Our host may keep standard server logs such as IP address and browser type for security and operations.</p>
+<h3>Third-party links</h3><p>We link to other sites and are not responsible for their privacy practices.</p>
+<h3>Your rights</h3><p>To ask about or request deletion of any personal data you sent us, email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>"""),
+}
+
+def write(path, html):
+    out = Path("dist") / path.strip("/") / "index.html" if path != "404" else Path("dist/404.html")
+    out.parent.mkdir(parents=True, exist_ok=True); out.write_text(html, encoding="utf-8")
+
+def main():
+    shutil.rmtree("dist", ignore_errors=True); Path("dist").mkdir()
+    shutil.copytree("assets", "dist/assets")
+    for f in ("CNAME", ".nojekyll"):
+        shutil.copy(f, "dist/" + f)
+    posts = load_posts(); urls = ["/", "/blog/"]
+    # ads.txt (needed by AdSense once you have your publisher ID)
+    if ADSENSE_CLIENT:
+        Path("dist/ads.txt").write_text(f"google.com, {ADSENSE_CLIENT.replace('ca-','')}, DIRECT, f08c47fec0942fa0\n")
+    # home
+    feat = posts[0] if posts else None
+    featured = (f'<a class="feature" href="/blog/{feat["slug"]}/"><small>Latest &middot; {feat["mins"]} min read</small><h3>{feat["title"]}</h3><p>{feat["description"]}</p></a>' if feat else "<p>First post coming soon.</p>")
+    home = f'''<section class="hero"><div class="wrap"><div><h1>{TAGLINE}</h1><p class="lead">{DESC}</p>
+<a class="btn" href="/blog/">Read the blog</a></div><img src="/assets/emblem.png" alt="A bull and a bear facing off across a line of candlesticks" width="880" height="560"></div></section>
+<div class="risk"><div class="wrap"><strong>Risk warning:</strong> {RISK}</div></div>
+<section class="section"><div class="wrap"><h2>Latest from the blog</h2>{featured}{"".join(row(p) for p in posts[1:6])}{ad("top")}</div></section>'''
+    write("/", page(SITE_NAME, f"{SITE_NAME}: {TAGLINE} {DESC}", home, "/"))
+    write("/blog/", page("Blog", "Forex trading guides, chart lessons and risk management for learning traders.",
+          f'<section class="section"><div class="wrap"><h2>All posts</h2>{"".join(row(p) for p in posts)}{ad("bottom")}</div></section>', "/blog/"))
+    for p in posts:
+        path = f'/blog/{p["slug"]}/'; urls.append(path)
+        body = (f'<article><h1>{p["title"]}</h1><div class="meta">{p["date"]} &middot; {p["mins"]} min read &middot; {p.get("category","Forex")}</div>'
+                f'{inject_ad(p["body"])}{ad("bottom")}<div class="note">{RISK} <a href="/disclaimer/">Read the full disclaimer</a>.</div></article>')
+        write(path, page(p["title"], p["description"], body, path, "article"))
+    for slug, (t, d, b) in STATIC.items():
+        path = f"/{slug}/"; urls.append(path)
+        write(path, page(t, d, f"<article>{b}</article>", path))
+    write("404", page("Page not found", "Page not found.", '<article><h1>Page not found</h1><p>That page does not exist. <a href="/blog/">Browse the blog</a>.</p></article>', "/404"))
+    Path("dist/robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+    Path("dist/sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>" for u in urls) + "</urlset>")
+    print(f"Built {len(posts)} posts, {len(urls)} pages -> dist/")
+
+main()

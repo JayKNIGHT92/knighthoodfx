@@ -53,25 +53,27 @@ New York (American) Session: Overlaps with London, creating the highest volume a
 
 All forex quotes consist of two currencies listed side by side. The first currency listed is the Base Currency, and the second currency is the Quote (or Counter) Currency.   For example, if the EUR/USD exchange rate is quoted at 1.0850, it means 1 Euro is currently worth 1.0850 US Dollars. Currencies are generally categorised into three distinct tiers:   
 
-# Major Currency PairsMajors
+### Major Currency PairsMajors
 feature the US Dollar paired against the world's most heavily traded economies. They offer the highest liquidity, lowest transaction costs (spreads), and predictable price movements. Examples include EUR/USD, GBP/USD, USD/JPY, and AUD/USD.
 
-#Minor Currency Pairs (Crosses)Minors consist of major currencies traded against each other without including the US Dollar. Examples include EUR/GBP, GBP/JPY, and EUR/AUD.
+### Minor Currency Pairs (Crosses)
+Minors consist of major currencies traded against each other without including the US Dollar. Examples include EUR/GBP, GBP/JPY, and EUR/AUD.
 
-#Exotic Currency PairsExotics pair a major currency with a currency from an emerging or smaller economy, such as USD/ZAR (South African Rand) or USD/TRY (Turkish Lira). Exotics feature lower liquidity, higher volatility, and significantly wider trading spreads.   
+### Exotic Currency Pairs
+Exotics pair a major currency with a currency from an emerging or smaller economy, such as USD/ZAR (South African Rand) or USD/TRY (Turkish Lira). Exotics feature lower liquidity, higher volatility, and significantly wider trading spreads.   
 
 
 ## 7. Essential Forex Terminology Every Beginner Must Know
 
 To communicate effectively and navigate trading platforms, you need to understand core market terminology:
 
-# Pips (Percentage in Point):
+### Pips (Percentage in Point):
 The standard unit of measure for price movement in forex. For most currency pairs, a pip represents the fourth decimal place (0.0001).
-# Spread:
+### Spread:
 The difference between the Bid price (selling price) and the Ask price (buying price). The spread represents the primary cost of executing a trade.
-# Leverage & Margin:
+### Leverage & Margin:
 Leverage allows traders to control larger positions using a smaller deposit (margin). While leverage amplifies potential gains, it equally magnifies potential losses.
-# Lots:
+### Lots:
 Forex is traded in standardised unit sizes: Standard Lots (100,000 units), Mini Lots (10,000 units), and Micro Lots (1,000 units).   
 
 <img width="1116" height="592" alt="knighthoodfx_mt5" src="https://github.com/user-attachments/assets/e9b6280b-ab28-4231-8f72-4b6587459c51" />
@@ -80,22 +82,22 @@ Forex is traded in standardised unit sizes: Standard Lots (100,000 units), Mini 
 ## 8. What Drives the Forex Market?
 
 Exchange rates do not move randomly; they react to fundamental economic variables that alter global supply and demand:
-# Central Bank Interest Rates:
+### Central Bank Interest Rates:
 Higher interest rates attract foreign capital seeking yield, strengthening the domestic currency.
-# Inflation & Economic Data:
+### Inflation & Economic Data:
 Key indicators like the Consumer Price Index (CPI), GDP growth, and employment reports (e.g., US Non-Farm Payrolls) trigger immediate market volatility.   Geopolitical Stability: Elections, trade policies, and global conflicts shift capital toward safe-haven currencies like the US Dollar, Swiss Franc, and Japanese Yen.   
 
 
 ## 9. How to Start Forex Trading Safely: A Step-by-Step Blueprint
 
 Starting your trading journey safely requires discipline and structure:
-# Educate Yourself First: 
+### Educate Yourself First: 
 Understand basic technical analysis (candlestick charts, support/resistance) and fundamental analysis.
-# Select a Regulated Broker:
+### Select a Regulated Broker:
 Choose a broker regulated by reputable authorities such as the FCA, ASIC, or CFTC to safeguard your funds.
-# Master Risk Management:
+### Master Risk Management:
 Never risk more than 1% to 2% of your account equity on a single trade. Always set a strict stop-loss order.
-# Practice on a Demo Account:
+### Practice on a Demo Account:
 Build experience using virtual funds until you establish a consistent, tested strategy.   
 
 

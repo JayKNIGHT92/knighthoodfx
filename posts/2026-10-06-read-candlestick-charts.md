@@ -9,6 +9,7 @@ If you have ever opened a forex trading platform like MetaTrader or TradingView 
 
 Yet, behind that initial visual noise lies a clean, highly structured, and deeply psychological story. Every tick of price movement in the foreign exchange market represents a real-time tug-of-war between two powerful forces: buyers seeking higher prices (bulls) and sellers pushing for lower valuations (bears). The single most effective tool traders use to decode this ongoing market battle is the candlestick chart.
 <img width="480" height="270" alt="Knighthoodfx_Candlestickanatomy_2" src="https://github.com/user-attachments/assets/bb5fb0a5-14e3-4551-b260-1b626fee8778" />
+
 Unlike simple line charts that only plot closing prices, candlestick charts provide a rich four-dimensional summary of market behaviour over any selected timeframe—whether that is a 1-minute scalping chart or a monthly macro chart. They do not just reveal where price moved; they show you how it got there, who controlled the session, and whether the market is building momentum or preparing for an aggressive reversal.
 
 In this comprehensive guide, you will learn how to read candlestick charts from the ground up. We will cover their fascinating historical origins, break down the individual anatomy of a candle, unpack what different candle shapes mean, explore why market context dictates everything, and outline a step-by-step practical framework you can start using today to analyze any currency pair with clarity.

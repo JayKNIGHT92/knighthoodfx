@@ -9,7 +9,7 @@ SITE_NAME = "KnightHOODFX"
 SITE_URL = "https://knighthoodfx.online"
 TAGLINE = "Trade. Learn. Grow."
 DESC = "A digital space that talks everything forex."
-EMAIL = "hello@knighthoodfx.online"      # change to a real inbox you own
+EMAIL = "knighthoodfx@gmail.com"      # change to a real inbox you own
 ADSENSE_CLIENT = ""                      # after approval: "ca-pub-1234567890123456"
 AD_SLOTS = {"top": "", "inarticle": "", "bottom": ""}   # ad unit IDs from AdSense
 # ------------------------------------------------------

@@ -8,6 +8,7 @@ description: Master technical price action, understand market sentiment, and lea
 If you have ever opened a forex trading platform like MetaTrader or TradingView for the very first time, you probably felt an immediate wave of overwhelm. Bright red and green vertical bars flicker across your monitor, jagged wicks point in opposite directions, and price moves up and down at relentless speed. To an untrained eye, a financial price chart looks like visual chaos—an unpredictable wall of noise.
 
 Yet, behind that initial visual noise lies a clean, highly structured, and deeply psychological story. Every tick of price movement in the foreign exchange market represents a real-time tug-of-war between two powerful forces: buyers seeking higher prices (bulls) and sellers pushing for lower valuations (bears). The single most effective tool traders use to decode this ongoing market battle is the candlestick chart.
+
 <img width="480" height="270" alt="Knighthoodfx_Candlestickanatomy_2" src="https://github.com/user-attachments/assets/bb5fb0a5-14e3-4551-b260-1b626fee8778" />
 
 Unlike simple line charts that only plot closing prices, candlestick charts provide a rich four-dimensional summary of market behaviour over any selected timeframe—whether that is a 1-minute scalping chart or a monthly macro chart. They do not just reveal where price moved; they show you how it got there, who controlled the session, and whether the market is building momentum or preparing for an aggressive reversal.

@@ -14,7 +14,7 @@ To trade forex sustainably, you do not need an advanced degree in mathematics. Y
 
 In this comprehensive guide, we strip away vague definitions and dive straight into real-world numbers. By walking through clear, step-by-step calculations across major, minor, and JPY currency pairs, you will learn how to calculate risk, size your positions accurately, and handle leverage responsibly.
 
-__The Triad of Position Sizing: Pips measure market distance, Lots determine monetary scale, and Leverage controls purchasing power. Master their combination, and you master account protection.
+_The Triad of Position Sizing: Pips measure market distance, Lots determine monetary scale, and Leverage controls purchasing power. Master their combination, and you master account protection.
 
 
 ## What is a Pip? (Percentage in Point)
@@ -74,7 +74,7 @@ To open a $100,000 position, you need 1.00% margin ($1,000 deposit).
 ### 500:1 Leverage:
 To open a $100,000 position, you need 0.20% margin ($200 deposit).
 
-__Leverage Warning: Leverage is a double-edged sword. While it allows small accounts to control meaningful trades, high leverage increases exposure to fast margin calls if price moves against you.
+_Leverage Warning: Leverage is a double-edged sword. While it allows small accounts to control meaningful trades, high leverage increases exposure to fast margin calls if price moves against you.
 
 ## Real-World Walkthrough: Combining Pips, Lots, and Leverage
 

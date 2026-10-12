@@ -5,7 +5,7 @@ category: Basics
 description: Navigate the modern proprietary trading landscape, bypass hidden evaluation traps, understand risk rules, and master the exact steps required to secure consistent cash payouts..
 ---
 
-# 1. Introduction
+# Introduction
 
 For decades, trading with serious capital was an exclusive privilege reserved for Wall Street professionals, institutional hedge fund managers, and wealthy high-net-worth individuals. If an everyday retail trader possessed a sharp trading edge, strict emotional discipline, and a profitable strategy, they were still constrained by the size of their personal savings account. Risking $50,000 or $100,000 of personal capital was out of reach for most aspiring market participants.
 
@@ -25,7 +25,7 @@ Traditionally, institutional proprietary trading firms hired professional trader
 Retail prop firms democratised this model by moving it online. Today's online prop firms operate primarily as service providers and simulated trading evaluators. When you purchase a "challenge" or evaluation, you pay a registration fee to access a simulated trading environment equipped with virtual capital. If you demonstrate profitability while respecting strict risk parameters, you are promoted to a funded account where you manage real or mirrored capital and receive a percentage share of your net profits—known as a profit split.
 
 
-## Understanding the Three Core Prop Firm Operating Models
+## 2. Understanding the Three Core Prop Firm Operating Models
 Not all prop accounts are structured the same way. Before committing your time and capital, you must understand the primary operating models used across the industry:
 
 ### Two-Step Evaluation (The Industry Standard):
@@ -38,7 +38,7 @@ Features a single evaluation phase with a higher profit target (typically 10% to
 Allows traders to skip the evaluation phase entirely by paying a higher upfront onboarding fee. While you gain immediate access to a funded account, these accounts typically enforce much tighter daily drawdown limits and lower initial profit splits.
 
 
-## Decoding the Rules: Drawdowns, Daily Limits, and Consistency
+## 3. Decoding the Rules: Drawdowns, Daily Limits, and Consistency
 
 The real challenge of a prop account is not hitting the profit target—it is surviving the risk rules. Prop firms protect their capital using strict automated risk parameters. Violating any of these rules results in immediate account termination:
 
@@ -54,7 +54,7 @@ Designed to prevent gamblers from passing challenges on a single high-risk lotte
 _Drawdown Warning: Always read the fine print on how your firm calculates trailing drawdown. Balance-based drawdowns are significantly more forgiving than equity-based trailing drawdowns._
 
 
-## How to Actually Get Payouts: A Step-by-Step Execution Plan
+## 4. How to Actually Get Payouts: A Step-by-Step Execution Plan
 Passing a challenge is only half the battle. Securing regular cash payouts requires strict operational discipline and adherence to payout terms:
 
 ### Choose a Transparent, Reputable Firm:
@@ -70,17 +70,17 @@ Many firms require a minimum number of active trading days (e.g., 5 to 10 days) 
 Complete your Know Your Customer (KYC) identity verification early. Ensure your withdrawal method (bank wire, crypto USDT/USDC, or payment gateway) matches your verified profile details.
 
 
-## Red Flags to Avoid When Selecting a Prop Firm
+## 5. Red Flags to Avoid When Selecting a Prop Firm
 The retail prop industry has seen rapid consolidation, with untrustworthy firms disappearing overnight. Watch out for these critical red flags before paying any challenge fees:
 
 ### Unrealistic Marketing Claims:
 Avoid firms promising guaranteed wealth, "easy funding," or unrealistic 100% profit splits with zero restrictions.
 
 ### Hidden Rule Changes:
-Stay away from firms with a history of modifying payout terms or retroactively penalizing profitable traders after they request withdrawals.
+Stay away from firms with a history of modifying payout terms or retroactively penalising profitable traders after they request withdrawals.
 
 ### Platform Instability & Slippage:
-Firms utilizing unreliable broker feeds, frequent freezing during news events, or artificial spread widening will sabotage your execution.
+Firms utilising unreliable broker feeds, frequent freezing during news events, or artificial spread widening will sabotage your execution.
 
 
 # Conclusion

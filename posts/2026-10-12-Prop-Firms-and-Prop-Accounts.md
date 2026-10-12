@@ -15,7 +15,7 @@ However, navigating the prop firm ecosystem requires more than just a profitable
 
 In this comprehensive beginner's guide, we will unpack how modern prop firms operate, explore the differences between evaluation models, decode the hidden rules that destroy accounts, and outline a proven, step-by-step blueprint to help you secure consistent, stress-free cash payouts.
 
-_Core Prop Trader Mindset: A prop firm account is not free money. It is a strict risk-management partnership where protecting the firm's drawdown limit matters far more than chasing high returns.
+_Core Prop Trader Mindset: A prop firm account is not free money. It is a strict risk-management partnership where protecting the firm's drawdown limit matters far more than chasing high returns._
 
 
 ## 1. What is a Proprietary Trading Firm? (The Retail Model)
@@ -53,6 +53,7 @@ Designed to prevent gamblers from passing challenges on a single high-risk lotte
 
 _Drawdown Warning: Always read the fine print on how your firm calculates trailing drawdown. Balance-based drawdowns are significantly more forgiving than equity-based trailing drawdowns._
 
+
 ## How to Actually Get Payouts: A Step-by-Step Execution Plan
 Passing a challenge is only half the battle. Securing regular cash payouts requires strict operational discipline and adherence to payout terms:
 
@@ -72,13 +73,13 @@ Complete your Know Your Customer (KYC) identity verification early. Ensure your 
 ## Red Flags to Avoid When Selecting a Prop Firm
 The retail prop industry has seen rapid consolidation, with untrustworthy firms disappearing overnight. Watch out for these critical red flags before paying any challenge fees:
 
-## Unrealistic Marketing Claims:
+### Unrealistic Marketing Claims:
 Avoid firms promising guaranteed wealth, "easy funding," or unrealistic 100% profit splits with zero restrictions.
 
-## Hidden Rule Changes:
+### Hidden Rule Changes:
 Stay away from firms with a history of modifying payout terms or retroactively penalizing profitable traders after they request withdrawals.
 
-## Platform Instability & Slippage:
+### Platform Instability & Slippage:
 Firms utilizing unreliable broker feeds, frequent freezing during news events, or artificial spread widening will sabotage your execution.
 
 

@@ -61,9 +61,12 @@ Brokers utilize sophisticated risk management software (such as automated profil
 When you open a live trading account, the broker's system analyzes your trading profile across several parameters:
 
 ### Deposit Size & Leverage:
+
 Small accounts with maximum leverage are automatically classified as high-risk, low-probability traders and assigned to the B-Book.
-### Trading History & Performance: Traders with consistent win rates, disciplined stop losses, or larger capital bases are identified as profitable and shifted to the A-Book.
-###Trading Style & Strategy: Scalping, news trading, and automated EA arbitrage strategies are often flagged quickly, as they pose higher risk to internal dealing desks.
+### Trading History & Performance:
+Traders with consistent win rates, disciplined stop losses, or larger capital bases are identified as profitable and shifted to the A-Book.
+### Trading Style & Strategy:
+Scalping, news trading, and automated EA arbitrage strategies are often flagged quickly, as they pose higher risk to internal dealing desks.
 
 _Hybrid Engine Secret: Brokers dynamically shift clients between A-Book and B-Book. If a trader on the B-Book begins demonstrating consistent profitability, the broker's risk engine will automatically transfer their orders to the A-Book to protect corporate capital._
 
@@ -85,9 +88,9 @@ Using server-side software plugins (such as delay plugins) that intentionally sl
 Neither A-Book nor B-Book is inherently "good" or "bad." Each model offers distinct advantages depending on your experience and trading approach:
 
 ### When a B-Book / Market Maker Works Best:
-*Beginner Traders with Small Accounts ($100 to $1,000):
+Beginner Traders with Small Accounts ($100 to $1,000):
 Benefit from micro/nano lot availability and tight fixed spreads.
-*Traders Seeking Guaranteed Stop-Losses:
+Traders Seeking Guaranteed Stop-Losses:
 Some market makers guarantee stop-loss execution without slippage for a fee.
 
 ### When an A-Book / STP / ECN Broker is Essential:

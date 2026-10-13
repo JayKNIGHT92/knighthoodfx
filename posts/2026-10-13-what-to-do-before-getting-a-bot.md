@@ -5,7 +5,6 @@ category: Basics
 description: An essential buyer's checklist for evaluating algorithmic trading bots, spotting curve-fitted backtests, avoiding toxic risk models, and protecting your capital.
 ---
 
-
 # Introduction
 
 The promise of hands-free income has long been the holy grail of retail trading. The idea of installing an automated software program—commonly known as a Forex Bot or Expert Advisor (EA)—onto MetaTrader 4 or 5 and watching it passively generate daily profits while you sleep is undeniably attractive.

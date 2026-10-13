@@ -93,9 +93,11 @@ Before risking significant live capital on a newly purchased or custom-coded Exp
 ###Phase 1: Forward-Test on Demo (1 to 2 Months):
 Run the EA on a demo account with identical broker conditions to verify that live execution matches historical backtests.
 
-### Phase 2: Start Micro Live Account: Transition to a small live or cent account using 0.01 micro lot sizes to verify real-world slippage and spread execution without risking meaningful capital.
+### Phase 2: Start Micro Live Account:
+Transition to a small live or cent account using 0.01 micro lot sizes to verify real-world slippage and spread execution without risking meaningful capital.
 
-### Phase 3: Scale Capital Gradually: Only increase lot sizes or deposit full trading capital after the EA has demonstrated 3+ months of stable risk-adjusted performance on live accounts.
+### Phase 3:
+Scale Capital Gradually: Only increase lot sizes or deposit full trading capital after the EA has demonstrated 3+ months of stable risk-adjusted performance on live accounts.
 
 
 # Conclusion

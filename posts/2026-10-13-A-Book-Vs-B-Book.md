@@ -1,5 +1,4 @@
 ---
-
 title: A-Book vs B-Book Brokers: The Secrets They Won’t Tell You
 date: 2026-10-13
 category: Basics
@@ -73,9 +72,12 @@ _Hybrid Engine Secret: Brokers dynamically shift clients between A-Book and B-Bo
 
 While market making is completely legal and regulated under strict guidelines, untrustworthy or unregulated B-Book brokers have historically used manipulative tactics to ensure retail traders lose:
 
-### Artificial Slippage & Re-quotes: Delaying order execution during volatile news releases so that your trade fills at a significantly worse price.
-### Stop Loss Hunting (Spread Widening): Artificially inflating bid/ask spreads during quiet trading hours (such as market rollover) to hit clustered retail stop-loss orders.
-### Plugins & Virtual Dealing Desks: Using server-side software plugins (such as delay plugins) that intentionally slow down execution speed for consistently profitable clients.
+### Artificial Slippage & Re-quotes:
+Delaying order execution during volatile news releases so that your trade fills at a significantly worse price.
+### Stop Loss Hunting (Spread Widening):
+Artificially inflating bid/ask spreads during quiet trading hours (such as market rollover) to hit clustered retail stop-loss orders.
+### Plugins & Virtual Dealing Desks:
+Using server-side software plugins (such as delay plugins) that intentionally slow down execution speed for consistently profitable clients.
 
 
 ## 5. How to Choose the Right Broker for Your Trading Style
@@ -83,13 +85,18 @@ While market making is completely legal and regulated under strict guidelines, u
 Neither A-Book nor B-Book is inherently "good" or "bad." Each model offers distinct advantages depending on your experience and trading approach:
 
 ### When a B-Book / Market Maker Works Best:
-*Beginner Traders with Small Accounts ($100 to $1,000):* Benefit from micro/nano lot availability and tight fixed spreads.
-*Traders Seeking Guaranteed Stop-Losses:* Some market makers guarantee stop loss execution without slippage for a fee.
+*Beginner Traders with Small Accounts ($100 to $1,000):
+Benefit from micro/nano lot availability and tight fixed spreads.
+*Traders Seeking Guaranteed Stop-Losses:
+Some market makers guarantee stop loss execution without slippage for a fee.
 
 ### When an A-Book / STP / ECN Broker is Essential:
-*Experienced Traders Managing Large Capital ($5,000+):* Require direct access to interbank liquidity with zero conflict of interest.
-*High-Frequency Scalpers and News Traders:* Need sub-millisecond execution speeds and variable raw interbank spreads.
-*Algorithmic EA Traders:* Require unbiased execution environments free from server-side delay plugins.
+*Experienced Traders Managing Large Capital ($5,000+):
+Require direct access to interbank liquidity with zero conflict of interest.
+*High-Frequency Scalpers and News Traders:
+Need sub-millisecond execution speeds and variable raw interbank spreads.
+*Algorithmic EA Traders:
+Require unbiased execution environments free from server-side delay plugins.
 
 
 # Conclusion

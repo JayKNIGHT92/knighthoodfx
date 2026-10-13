@@ -15,9 +15,11 @@ However, behind the polished marketing campaigns and cherry-picked screenshots l
 
 An Expert Advisor is simply a tool—neither a guaranteed magic bullet nor an inherently flawed product. When properly engineered, rigorously tested, and supervised with sound risk parameters, EAs eliminate human emotional bias and execute complex technical strategies with millisecond precision. But buying or deploying an EA without knowing what to look for under the hood is a recipe for financial disaster.
 
+Also, there are trading technology companies like Optimum Tick Experts (OTE Traders And Academy) that develop bots for traders and offer courses on how to build a bot. 
+
 In this comprehensive buyer's guide, we will break down the essential checklist every trader must evaluate before purchasing or deploying a Forex Bot. You will learn how to spot curve-fitted backtesting traps, identify toxic risk management strategies, demand verified live track records, and configure a safe environment for automated trading.
 
-_Automation Rule: An EA does not replace risk management—it automates it. If an EA uses a flawed risk strategy, it simply automates the destruction of your account at machine speed_
+_Automation Rule: An EA does not replace risk management—it automates it. If an EA uses a flawed risk strategy, it simply automates the destruction of your account at machine speed. You can visit www.otetraders.com for a session on getting a bot with risk management and reasonable profit potential_
 
 
 ## 1. Verified Live Track Records vs. Fabricated Screenshots
@@ -50,7 +52,7 @@ A Martingale algorithm doubles the trade lot size every time a position goes int
 Grid bots place Buy and Sell orders at fixed pip intervals regardless of market direction. Without strict equity cap limits, a grid system floating against a massive trend will accumulate compounding drawdown that rapidly drains your equity balance.
 
 ### 3. EAs Without Hard Stop Loss Orders:
-Any EA that opens positions without placing a hard stop loss on the broker's server is a major red flag. If your internet connection drops or a major geopolitical black-swan event occurs, an uncapped trade can wipe out your entire account in minutes.
+Any EA that opens positions without placing a hard stop loss on the broker's server is a major red flag. If your internet connection drops or a major geopolitical black-swan event occurs, an uncapped trade can wipe out your entire account in minutes. I once used a bot called *Aurum Reversion Pro from OTE* with proper Hard Stop and Loss Orders to control and minimise losses, especially for traders using prop accounts. (https://www.mql5.com/en/market/product/154848)
 
 
 ## 3. Spotting Over-Optimized and "Curve-Fitted" Backtests
@@ -73,10 +75,10 @@ Inquire whether the algorithm was validated using "out-of-sample" historical per
 
 ## 4. Essential Technical Infrastructure:
 
-VPS and Broker ExecutionEven a high-quality, well-designed EA will fail if your trading infrastructure is unreliable. Automated trading demands specialized hosting and low-latency broker execution:   
+VPS and Broker Execution: Even a high-quality, well-designed EA will fail if your trading infrastructure is unreliable. Automated trading demands specialized hosting and low-latency broker execution:   
 
 ### Virtual Private Server (VPS):
-Never run an EA on a personal home computer. Power outages, internet disconnections, or system updates will freeze your bot mid-trade. Always host your MT4/MT5 platform on a dedicated, low-latency VPS located close to your broker's trade servers.
+Never run an EA on a personal home computer. Power outages, internet disconnections, or system updates will freeze your bot mid-trade. Always host your MT4/MT5 platform on a dedicated, low-latency VPS located close to your broker's trade servers. _ Brokers like roboforex do offer vps services for traders along with their account with the broker_
 
 ### Execution Speed & Latency:
 For high-frequency or scalping EAs, execution speed is critical. Look for a VPS latency of under 5 milliseconds to your broker's server to minimize slippage.

@@ -88,7 +88,7 @@ Neither A-Book nor B-Book is inherently "good" or "bad." Each model offers disti
 *Beginner Traders with Small Accounts ($100 to $1,000):
 Benefit from micro/nano lot availability and tight fixed spreads.
 *Traders Seeking Guaranteed Stop-Losses:
-Some market makers guarantee stop loss execution without slippage for a fee.
+Some market makers guarantee stop-loss execution without slippage for a fee.
 
 ### When an A-Book / STP / ECN Broker is Essential:
 *Experienced Traders Managing Large Capital ($5,000+):

@@ -52,7 +52,7 @@ A Martingale algorithm doubles the trade lot size every time a position goes int
 Grid bots place Buy and Sell orders at fixed pip intervals regardless of market direction. Without strict equity cap limits, a grid system floating against a massive trend will accumulate compounding drawdown that rapidly drains your equity balance.
 
 ### 3. EAs Without Hard Stop Loss Orders:
-Any EA that opens positions without placing a hard stop loss on the broker's server is a major red flag. If your internet connection drops or a major geopolitical black-swan event occurs, an uncapped trade can wipe out your entire account in minutes. I once used a bot called Aurum Reversion Pro from OTE with proper Hard Stop and Loss Orders to control and minimise losses, especially for traders using prop accounts. CLick [here](https://www.mql5.com/en/market/product/154848) to check it out.
+Any EA that opens positions without placing a hard stop loss on the broker's server is a major red flag. If your internet connection drops or a major geopolitical black-swan event occurs, an uncapped trade can wipe out your entire account in minutes. I once used a bot called **Aurum Reversion Pro from OTE** with proper Hard Stop and Loss Orders to control and minimise losses, especially for traders using prop accounts. Click [here](https://www.mql5.com/en/market/product/154848) to check it out.
 
 
 ## 3. Spotting Over-Optimized and "Curve-Fitted" Backtests

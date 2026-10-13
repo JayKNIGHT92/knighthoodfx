@@ -59,7 +59,7 @@ Vendor sales pages love showcasing 10-year strategy tester reports featuring smo
 
 Curve-fitting occurs when a developer fine-tunes an EA's inputs so perfectly to historical data that it memorizes past market moves. While the EA performs flawlessly on historical data, it fails completely when exposed to unseen future price action.
 
-### Key Backtest Quality Indicators:
+## Key Backtest Quality Indicators:
 
 ### Modelling Quality (99.0% or 100% EveryTick):
 Reject backtests with 25% or 90% modeling quality. Accurate testing requires real variable spread and tick data (such as Dukascopy tick archives).   
